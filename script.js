@@ -1,4 +1,3 @@
-// =================== Form Validation ===================
 document.getElementById("contactForm").addEventListener("submit", function(event) {
     event.preventDefault();
 
@@ -21,8 +20,6 @@ document.getElementById("contactForm").addEventListener("submit", function(event
         document.getElementById("contactForm").reset();
     }
 });
-
-// =================== To-Do List (DOM Manipulation) ===================
 document.getElementById("addTask").addEventListener("click", function() {
     let todoInput = document.getElementById("todoInput");
     let todoList = document.getElementById("todoList");
@@ -40,3 +37,4 @@ document.getElementById("addTask").addEventListener("click", function() {
     todoList.appendChild(li);
     todoInput.value = "";
 });
+
