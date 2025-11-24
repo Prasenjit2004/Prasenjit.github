@@ -1,63 +1,71 @@
+
 body {
-    background-color: #020b26; 
-    text-align: center;
     font-family: Arial, sans-serif;
-    padding-top: 50px;
+    margin: 0;
+    background: #f4f4f4;
 }
 
-h1 {
-    margin-bottom: 10px;
-    color: #00eaff;
+.navbar {
+    background: #0078d7;
+    color: white;
+    padding: 15px;
+    text-align: center;
 }
 
-
-.space {
-    position: relative;
-    width: 350px;
-    height: 350px;
-    margin: 40px auto;
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
 }
 
-.earth {
-    width: 120px;
-    height: 120px;
-    background: radial-gradient(circle, #1a75ff 40%, #0044aa 80%);
-    border-radius: 50%;
-    position: absolute;
-    top: 115px;
-    left: 115px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-    box-shadow: 0 0 20px #1a75ff;
+.form-section, .todo-section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+form input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    box-sizing: border-box;
 }
 
-.moon {
-    width: 50px;
-    height: 50px;
-    background: radial-gradient(circle at 30% 30%, #ffffff 30%, #aaaaaa);
-    border-radius: 50%;
-    position: absolute;
-    animation: moonOrbit 4s linear infinite;
-    transform-origin: -170px -170px;
-}
-@keyframes moonOrbit {
-    0% { transform: rotate(0deg) translateX(170px); }
-    100% { transform: rotate(360deg) translateX(170px); }
 button {
-    background: #00eaff;
+    background: #0078d7;
+    color: white;
     border: none;
-    color: black;
-    padding: 10px 20px;
-    font-size: 18px;
     cursor: pointer;
-    border-radius: 25px;
-    transition: 0.3s;
 }
 
 button:hover {
-    background: #008ab8;
-    color: white;
+    background: #0056a5;
 }
 
+.todo-container {
+    display: flex;
+    gap: 10px;
+}
+
+.todo-container input {
+    flex: 1;
+}
+
+#todoList li {
+    background: #e0e0e0;
+    padding: 8px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#todoList button {
+    background: red;
+    width: auto;
+    padding: 5px 10px;
+}
+@media(max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+}
