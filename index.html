@@ -3,47 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Web Project</title>
+    <title>Earth and Moon Animation</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <h1>🌍 Earth with Moon Orbit Animation 🌕</h1>
+    <p>Watch the moon moving around Earth!</p>
 
-    <header class="navbar">
-        <h2>My Web Project</h2>
-    </header>
-    <main class="content">
-        <section class="form-section">
-            <h2>Contact Form</h2>
-            <form id="contactForm">
-                <label>Name:</label>
-                <input type="text" id="name" placeholder="Enter your name" required>
+    <div class="space">
+        <div class="earth">
+            <div class="moon"></div>
+        </div>
+    </div>
 
-                <label>Email:</label>
-                <input type="email" id="email" placeholder="Enter your email" required>
-
-                <label>Message:</label>
-                <textarea id="message" placeholder="Write your message" required></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
-            
-            <p id="formMessage"></p>
-        </section>
-        <section class="todo-section">
-            <h2>To-Do List</h2>
-            <div class="todo-container">
-                <input type="text" id="todoInput" placeholder="Add new task">
-                <button id="addTask">Add</button>
-            </div>
-            <ul id="todoList"></ul>
-        </section>
-    </main>
-
-    <footer>
-        <p>Designed by Prasenjit | Learning HTML, CSS, JavaScript</p>
-    </footer>
+    <button id="toggleBtn">Stop Animation</button>
 
     <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
